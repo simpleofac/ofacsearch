@@ -1,0 +1,146 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Administration History &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="Administration" href="index.html" />
+    <link rel="next" title="Record Locks" href="recordlocks.html" />
+    <link rel="prev" title="Organization Units" href="orgunits.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Administration History</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="orgunits.html">Organization Units</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="recordlocks.html">Record Locks</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="administration-history">
+<span id="admin-admin-history"></span><h1>Administration History<a class="headerlink" href="#administration-history" title="Permalink to this headline">¶</a></h1>
+<p>Every change (add/delete/modify) to the Users, Group, Roles, Permissions or Organization Unit will create a record
+in the admin history table. This not only services as audit purpose, it also can be used to restored the data to any point of past time.
+This function is used to search admin history.
+Click the <strong>Admin History</strong> in the left navigation menu under Administration, a new <strong>Admin History</strong> Tab folder
+will be created in the right panel.</p>
+<p>There are 2 sub-Tab folders, <a class="reference internal" href="#admin-admin-history-search"><em>Search Admin History</em></a> and <a class="reference internal" href="#admin-admin-history-search-result"><em>Search Result  Admin History</em></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There is no Create New or Update/Delete function on Admin History.</p>
+</div>
+<img alt="Admin History search screen" src="../_images/admin-admin-history-search.png" />
+<div class="section" id="search-admin-history">
+<span id="admin-admin-history-search"></span><h2>Search Admin History<a class="headerlink" href="#search-admin-history" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>HistoryId</td>
+<td>Unique record identifier.</td>
+</tr>
+<tr class="row-odd"><td>EntityID</td>
+<td>It will be UserId , RoleId, permissionId, GroupId and Orgunit Id.</td>
+</tr>
+<tr class="row-even"><td>Filed Name</td>
+<td>Name of Field.</td>
+</tr>
+<tr class="row-odd"><td>New Value</td>
+<td>The new value of this field</td>
+</tr>
+<tr class="row-even"><td>ChangeDate</td>
+<td>Date and time that changes occurred.</td>
+</tr>
+<tr class="row-odd"><td>Changer User</td>
+<td>who made the change.</td>
+</tr>
+<tr class="row-even"><td>Table Name</td>
+<td>User, Role, Group, Permission or Orgunit.</td>
+</tr>
+<tr class="row-odd"><td>AND</td>
+<td>Select AND radio box if you want those criteria add together.</td>
+</tr>
+<tr class="row-even"><td>OR</td>
+<td>Select OR radio box if you want to get the result if either criteria meet.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-admin-history">
+<span id="admin-admin-history-search-result"></span><h2>Search Result  Admin History<a class="headerlink" href="#search-result-admin-history" title="Permalink to this headline">¶</a></h2>
+<img alt="Admin History search result screen" src="../_images/admin-admin-history-search-result.png" />
+<p>The top part is the table, shows the list of the Admin History that meet the search criteria.
+The bottom part is the details of the selected entry. There is no create/update/delete function in Admin History.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="orgunits.html">Organization Units</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="recordlocks.html">Record Locks</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

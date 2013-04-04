@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Action Rules &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="Workflow" href="index.html" />
+    <link rel="next" title="Action Reason Map" href="actionreason.html" />
+    <link rel="prev" title="Workflow" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Action Rules</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Workflow</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="actionreason.html">Action Reason Map</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="action-rules">
+<span id="workflow-action-rule"></span><h1>Action Rules<a class="headerlink" href="#action-rules" title="Permalink to this headline">¶</a></h1>
+<p>Action Rules define what actions the current alert can be performed. It defines action code, action name, from status,
+to status, permission key, etc. This is the rules to move alert from one status to another.</p>
+<p>Click the <strong>Action Rules</strong> in the left navigation menu under Workflow, a new <strong>Action Rules</strong> Tab folder will be created
+in the right panel.</p>
+<p>There are 3 sub-Tab folders, <a class="reference internal" href="#workflow-action-rule-search"><em>Search Action Rules</em></a>, <a class="reference internal" href="#workflow-action-rule-search-result"><em>Search Result Action Rules</em></a> and <a class="reference internal" href="#workflow-action-rule-new"><em>Create New Action Rules</em></a>.</p>
+<img alt="Action Rules search screen" src="../_images/action-rule-search.png" />
+<div class="section" id="search-action-rules">
+<span id="workflow-action-rule-search"></span><h2>Search Action Rules<a class="headerlink" href="#search-action-rules" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="83%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Action Rules Id</td>
+<td>Action Rules unique record identifier.</td>
+</tr>
+<tr class="row-odd"><td>Permission Key</td>
+<td>The identifier link to permission table. It is used to enforce who can have access
+to this action.</td>
+</tr>
+<tr class="row-even"><td>Action Code</td>
+<td>Unique code to identify this action.</td>
+</tr>
+<tr class="row-odd"><td>Action Name</td>
+<td>The Name of this action.</td>
+</tr>
+<tr class="row-even"><td>Comment Required</td>
+<td>Checkbox to set if users are required to input comment when users
+perform this action.</td>
+</tr>
+<tr class="row-odd"><td>Bulk Action</td>
+<td>Checkbox to set if users are allowed to bulk perform this action.</td>
+</tr>
+<tr class="row-even"><td>Workflow Name</td>
+<td>Select a workflow from the dropdown list.</td>
+</tr>
+<tr class="row-odd"><td>Extra Screen Code</td>
+<td>Some action requires to display extra screen to allow users to input
+extra information. Select from the dropdown list.</td>
+</tr>
+<tr class="row-even"><td>From Status</td>
+<td>The current status.</td>
+</tr>
+<tr class="row-odd"><td>To Status</td>
+<td>The status after the action is performed.</td>
+</tr>
+<tr class="row-even"><td>AND</td>
+<td>Select AND radio box if you want those criteria add together.</td>
+</tr>
+<tr class="row-odd"><td>OR</td>
+<td>Select OR radio box if you want to get the result if either criteria meet</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-action-rules">
+<span id="workflow-action-rule-search-result"></span><h2>Search Result Action Rules<a class="headerlink" href="#search-result-action-rules" title="Permalink to this headline">¶</a></h2>
+<img alt="Action Rules search result screen" src="../_images/action-rule-search-result.png" />
+<p>The top part is the table, shows the list of the Action Rules that meet the search criteria.
+The bottom part is the details of the selected entry</p>
+</div>
+<div class="section" id="update-delete-action-rules">
+<span id="workflow-action-rule-update"></span><h2>Update/Delete Action Rules<a class="headerlink" href="#update-delete-action-rules" title="Permalink to this headline">¶</a></h2>
+<p><strong>Double Click</strong> the selected record in the table to modify this entry.
+A new Tab folder <strong>Update/Delete Action Rules</strong> will be added, as show below.</p>
+<img alt="Action Rules update/delete screen" src="../_images/action-rule-update.png" />
+<div class="section" id="id1">
+<h3>Functional buttons<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Update:</strong> &#8211;  make changes on the Action Rules, then save and switch back to &#8220;Search result Action Rules&#8221; Tab.
+Some of the fields in this form are read only, like created/modified user and date.</li>
+<li><strong>Reset:</strong>&#8211;  reset the data to its initial value, discard all the changes.</li>
+<li><strong>Cancel:</strong>&#8211; Cancel this change and switch back to &#8220;Search result Action Rules&#8221; Tab.</li>
+<li><strong>Delete:</strong>&#8211; Delete this entry, then switch back to &#8220;Search result Action Rules&#8221; Tab.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="create-new-action-rules">
+<span id="workflow-action-rule-new"></span><h2>Create New Action Rules<a class="headerlink" href="#create-new-action-rules" title="Permalink to this headline">¶</a></h2>
+<p>Select the &#8220;Create New Action Rules&#8221; Tab to create a new entry.</p>
+<img alt="Action Rules create new screen" src="../_images/action-rule-new.png" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Action Rules Id</td>
+<td>Action Rules unique record identifier.</td>
+</tr>
+<tr class="row-odd"><td>Workflow Name</td>
+<td>Select a workflow from the dropdown list.</td>
+</tr>
+<tr class="row-even"><td>Action Code</td>
+<td>Unique code to identify this action.</td>
+</tr>
+<tr class="row-odd"><td>Action Name</td>
+<td>The Name of this action.</td>
+</tr>
+<tr class="row-even"><td>Description</td>
+<td>Description of this action.</td>
+</tr>
+<tr class="row-odd"><td>From Status</td>
+<td>The current status.</td>
+</tr>
+<tr class="row-even"><td>To Status</td>
+<td>The status after the action is performed.</td>
+</tr>
+<tr class="row-odd"><td>Permission Key</td>
+<td>The identifier link to permission table. It is used to enforce who can have access to this action.</td>
+</tr>
+<tr class="row-even"><td>Comment Required</td>
+<td>Checkbox to set if users are required to input comment when users perform this action.</td>
+</tr>
+<tr class="row-odd"><td>Bulk Action</td>
+<td>Checkbox to set if users are allowed to bulk perform this action.</td>
+</tr>
+<tr class="row-even"><td>Extra Screen Code</td>
+<td>Some action requires to display extra screen to allow users to input extra information.</td>
+</tr>
+<tr class="row-odd"><td>Display Order</td>
+<td>The order this action will display</td>
+</tr>
+<tr class="row-even"><td>CreatedByDate</td>
+<td>Date and Time when the entry is created. It is a read only field.</td>
+</tr>
+<tr class="row-odd"><td>CreatedByUser</td>
+<td>User who create this entry. It is a read only field.</td>
+</tr>
+<tr class="row-even"><td>ModifiedByDate</td>
+<td>Last modified date and time; It is a read only field.</td>
+</tr>
+<tr class="row-odd"><td>ModifiedByUser</td>
+<td>Last modified user; It is a read only field.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h3>Functional buttons<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Create:</strong> &#8211;  Click the Create button to create a new Action Rules. and switch to &#8220;Search result Action Rules&#8221; Tab.</li>
+<li><strong>Clear:</strong>&#8211;  Click the Clear button to clear all the fields</li>
+<li><strong>Cancel:</strong>&#8211; Click the Cancel button to cancel operation and switch back to &#8220;Search result Action Rules&#8221; Tab.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Workflow</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="actionreason.html">Action Reason Map</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

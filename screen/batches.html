@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Batches &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="Screening Management" href="index.html" />
+    <link rel="next" title="Case Management" href="../case/index.html" />
+    <link rel="prev" title="Integration with Screening Engine" href="integration.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Batches</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="integration.html">Integration with Screening Engine</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../case/index.html">Case Management</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="batches">
+<span id="screen-batches"></span><h1>Batches<a class="headerlink" href="#batches" title="Permalink to this headline">¶</a></h1>
+<p>Each File Scan or Customer DBScan is also called a batch.
+Users upload the file to the system via File Scan, or scan customers via customer dbscan in the screening Management.
+The screening instance(engine) scans the file or customer table against the sanction list.
+The system loads the alerts in the watch list alert database, at the same time,
+it keeps a record for this scan, or batch. This function is used to retrieve those batches.</p>
+<p>Click the <strong>Batch</strong> in the left navigation menu under Screening Management, a new <strong>Batch</strong> Tab folder will be created in the right panel.</p>
+<p>There are 2 sub-Tab folders, <a class="reference internal" href="#screen-batches-search"><em>Search Batches</em></a> and <a class="reference internal" href="#screen-batches-search-result"><em>Search Result  Batches</em></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There is no Create New or Update/Delete function on Batches.</p>
+</div>
+<img alt="Batches search screen" src="../_images/screen-batches-search.png" />
+<div class="section" id="search-batches">
+<span id="screen-batches-search"></span><h2>Search Batches<a class="headerlink" href="#search-batches" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>BatchId</td>
+<td>This is the unique number for the Batch entry in the system.</td>
+</tr>
+<tr class="row-odd"><td>OrgUnit Code</td>
+<td>select a value from the orgunit dropdown list.</td>
+</tr>
+<tr class="row-even"><td>File Format</td>
+<td>The format of the file; Select a value from the dropdown list.
+Please see <a class="reference internal" href="../resource/fileformat.html#res-fileformat"><em>File Format</em></a> for details.</td>
+</tr>
+<tr class="row-odd"><td>CreatedByDate</td>
+<td>Date and Time when this entry is created</td>
+</tr>
+<tr class="row-even"><td>CreatedByUser</td>
+<td>User who create this entry.</td>
+</tr>
+<tr class="row-odd"><td>File Name</td>
+<td>The name of the file.</td>
+</tr>
+<tr class="row-even"><td>AND</td>
+<td>Select AND radio box if you want those criteria add together.</td>
+</tr>
+<tr class="row-odd"><td>OR</td>
+<td>Select OR radio box if you want to get the result if either criteria meet.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-batches">
+<span id="screen-batches-search-result"></span><h2>Search Result  Batches<a class="headerlink" href="#search-result-batches" title="Permalink to this headline">¶</a></h2>
+<img alt="Batches search result screen" src="../_images/screen-batches-search-result.png" />
+<p>The top part is the table, shows the list of the Batches that meet the search criteria.
+The bottom part is the details of the selected entry. There is no create/update/delete function in Batches.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="integration.html">Integration with Screening Engine</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../case/index.html">Case Management</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

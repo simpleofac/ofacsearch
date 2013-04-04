@@ -1,0 +1,20 @@
+.. _workflow-index:
+
+Workflow
+============================================
+
+
+Watch list alert and/or AML alert has state or status code; for example, new, pending, under investigation, close (not match), 
+close (match), etc. Users can define any status code as needed via Resource->dropdown :ref:`res-dropdown` .
+
+Workflow rules define what actions the current alert can be performed. It defines action code, action name, from status, to status, 
+permission key,etc. This is the rules to move alert from one status to another. It can be very simple, from New to False match or 
+True Match, or can be a little complicated, like add comments, add documents, escalate to senior investigator, etc. 
+It is easily configurable to suit your business needs without vendor involvement.
+
+
+.. toctree::
+   :maxdepth: 1
+
+   actionrule.rst
+   actionreason.rst

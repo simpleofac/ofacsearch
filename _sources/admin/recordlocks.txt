@@ -1,0 +1,82 @@
+.. _admin-record-locks:
+
+Record Locks
+============================================
+
+It is configurable that system administrator can decide whether to lock a record while someone is editing the record. 
+If the system is configured to lock the record and use table lock, every time, when user is editing a record, 
+a record is added in the record locks table. When user finished editing, either via update or cancel, or session timeout, 
+the lock is released by delete the record mark form record locks table.
+
+In rare situation, if the application server is terminated abruptly, the record will stay in the record locks table.
+This function is used to manage those record locks, either delete unused one, or force someone to unlock it.
+
+Click the **Record Locks** in the left navigation menu under Administration, a new **Record Locks** Tab folder 
+will be created in the right panel. 
+
+There are 2 sub-Tab folders, :ref:`admin-record-locks-search` and :ref:`admin-record-locks-search-result`.
+
+.. note:: 
+
+   There is no Create New or Update function on Record Locks. But there is Delete function on Record Locks. 
+
+
+.. image:: _images/record-locks-search.png
+   :alt: Record Locks search screen
+
+   
+.. _admin-record-locks-search:
+
+Search Record Locks
+-------------------------------
+
+**Search Criteria**
+
+================ ================================================================================
+Field Name       Description
+================ ================================================================================
+Table Name	     The table name that locked record belongs to.
+Record Id	     The locked record Id.
+Lock Time	     When the lock occurred.
+Session Id	     The session Id of the user who locks the record.
+AND    	         Select AND radio box if you want those criteria add together. 
+OR               Select OR radio box if you want to get the result if either criteria meet.
+================ ================================================================================
+
+Functional buttons
+^^^^^^^^^^^^^^^^^^^
+
+* **Find:** --  click Find button to search.
+  
+* **Clear:**--  click Clear button to clear all the criteria.
+
+
+.. _admin-record-locks-search-result:
+
+Search Result  Record Locks
+--------------------------------------------
+
+.. image:: _images/record-locks-search-result.png
+   :alt:  Record Locks search result screen
+
+The top part is the table, shows the list of the Record Locks that meet the search criteria. 
+The bottom part is the details of the selected entry. 
+
+.. _admin-record-locks-update:
+
+Delete Record Locks
+-------------------------------------
+
+**Double Click** the selected record in the table to modify this entry. 
+A new Tab folder "Update/Delete Record Locks" will be added, as show below.
+
+.. image:: _images/record-locks-update.png
+   :alt: Record Locks update/delete screen
+
+Functional buttons
+^^^^^^^^^^^^^^^^^^^
+
+* **Reset:**--  reset the data to its initial value, discard all the changes.
+* **Cancel:**-- Cancel this change and switch back to "Search result Record Locks" Tab.
+* **Delete:**-- Delete this entry and switch back to "Search result Record Locks" Tab.
+

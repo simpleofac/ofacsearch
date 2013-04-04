@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Alternative Name (Alt. Name or Alias) &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="List Management" href="index.html" />
+    <link rel="next" title="Exception(Good Guy)" href="gg.html" />
+    <link rel="prev" title="Sanction List Entry" href="listentry.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Alternative Name (Alt. Name or Alias)</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="listentry.html">Sanction List Entry</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gg.html">Exception(Good Guy)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="alternative-name-alt-name-or-alias">
+<span id="list-alt"></span><h1>Alternative Name (Alt. Name or Alias)<a class="headerlink" href="#alternative-name-alt-name-or-alias" title="Permalink to this headline">¶</a></h1>
+<p>Each Sanction List entry can have 0 to many Alternate names, or Aliases.This function is used to manage those Alternate names.
+Click the <strong>Alt Name</strong> in the left navigation menu under List management, a new <strong>Alt Name</strong> Tab folder will be created
+in the right panel.</p>
+<p>There are 3 sub-Tab folders, <a class="reference internal" href="#list-alt-search"><em>Search Alt. Name (Alias)</em></a>, <a class="reference internal" href="#list-alt-search-result"><em>Search Result Alt. Name</em></a> and <a class="reference internal" href="#list-alt-new"><em>Create New Alt. Name</em></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Alts names must link to a Sanction List list entry.</p>
+</div>
+<img alt="Alternative name search screen" src="../_images/alt-search.png" />
+<div class="section" id="search-alt-name-alias">
+<span id="list-alt-search"></span><h2>Search Alt. Name (Alias)<a class="headerlink" href="#search-alt-name-alias" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>entNum</td>
+<td>Link to sanction list entry unique record identifier.</td>
+</tr>
+<tr class="row-odd"><td>AltNum</td>
+<td>Alt. name unique record identifier.</td>
+</tr>
+<tr class="row-even"><td>Name</td>
+<td>Alternate identity name.</td>
+</tr>
+<tr class="row-odd"><td>Alt. Type</td>
+<td>Type of alternate identity (aka, fka, nka).</td>
+</tr>
+<tr class="row-even"><td>Category</td>
+<td>Category of alternate identity.</td>
+</tr>
+<tr class="row-odd"><td>CreatedByDate</td>
+<td>Date and Time when this entry is created</td>
+</tr>
+<tr class="row-even"><td>CreatedByUser</td>
+<td>User who create this entry.</td>
+</tr>
+<tr class="row-odd"><td>ModifiedByDate</td>
+<td>Last modified date and time.</td>
+</tr>
+<tr class="row-even"><td>ModifiedByUser</td>
+<td>Last modified user.</td>
+</tr>
+<tr class="row-odd"><td>AND</td>
+<td>Select AND radio box if you want those criteria add together.</td>
+</tr>
+<tr class="row-even"><td>OR</td>
+<td>Select OR radio box if you want to get the result if either criteria meet</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-alt-name">
+<span id="list-alt-search-result"></span><h2>Search Result Alt. Name<a class="headerlink" href="#search-result-alt-name" title="Permalink to this headline">¶</a></h2>
+<img alt="Alt. Name search result screen" src="../_images/alt-search-result.png" />
+<p>The top part is the table, shows the list of the Alt. Names (aliases) that meet the search criteria.
+The bottom part is the details of the selected entry</p>
+<p>There are many one word Alt. Name; for example, OFAC entry 10938 (see
+screenshot above). Those one word Alt. Name (AKA) entries will cause many false positive alerts. We have an option to exclude it.
+Also see this link <a class="reference external" href="http://www.treasury.gov/resource-center/sanctions/OFAC-Enforcement/Pages/weak_strong_alias.aspx">http://www.treasury.gov/resource-center/sanctions/OFAC-Enforcement/Pages/weak_strong_alias.aspx</a></p>
+</div>
+<div class="section" id="update-delete-alt-name">
+<span id="list-alt-update"></span><h2>Update/Delete Alt. Name<a class="headerlink" href="#update-delete-alt-name" title="Permalink to this headline">¶</a></h2>
+<p><strong>Double Click</strong> the selected record in the table to modify this entry.
+A new Tab folder &#8220;Update/Delete Alt. Name&#8221; will be added, as show below.</p>
+<img alt="Alt. Name update/delete screen" src="../_images/alt-update.png" />
+<div class="section" id="id1">
+<h3>Functional buttons<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Update:</strong> &#8211;  make changes on the Alt. Name, then save and switch back to &#8220;Search result Alt. Name&#8221; Tab.
+Some of the fields in this form are read only, like Altnum, created/modified user and date.</li>
+<li><strong>Reset:</strong>&#8211;  reset the data to its initial value, discard all the changes.</li>
+<li><strong>Cancel:</strong>&#8211; Cancel this change and switch back to &#8220;Search result Alt. Name&#8221; Tab.</li>
+<li><strong>Delete:</strong>&#8211; Delete this entry, then switch back to &#8220;Search result Alt. Name&#8221; Tab.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="create-new-alt-name">
+<span id="list-alt-new"></span><h2>Create New Alt. Name<a class="headerlink" href="#create-new-alt-name" title="Permalink to this headline">¶</a></h2>
+<p>Select the &#8220;Create New Alt. Name&#8221; Tab to create a new entry.</p>
+<img alt="Alt. Name create new screen" src="../_images/alt-new.png" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>entNum</td>
+<td>Link to sanction list entry unique record identifier.</td>
+</tr>
+<tr class="row-odd"><td>AltNum</td>
+<td>Alt. name unique record identifier; This is a read only field.</td>
+</tr>
+<tr class="row-even"><td>Name</td>
+<td>Alternate identity name; This is a mandatory field</td>
+</tr>
+<tr class="row-odd"><td>Alt. Type</td>
+<td>Type of alternate identity (aka, fka, nka).</td>
+</tr>
+<tr class="row-even"><td>Category</td>
+<td>Category of alternate identity.</td>
+</tr>
+<tr class="row-odd"><td>CreatedByDate</td>
+<td>Date and Time when the entry is created. It is a read only field.</td>
+</tr>
+<tr class="row-even"><td>CreatedByUser</td>
+<td>User who create this entry. It is a read only field.</td>
+</tr>
+<tr class="row-odd"><td>ModifiedByDate</td>
+<td>Last modified date and time; It is a read only field.</td>
+</tr>
+<tr class="row-even"><td>ModifiedByUser</td>
+<td>Last modified user; It is a read only field.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h3>Functional buttons<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Create:</strong> &#8211;  Click the Create button to create a new Alt. Name entry and switch to &#8220;Search result Alt. Name&#8221; Tab.
+Name is a mandatory field, if it is empty, an error will show</li>
+<li><strong>Clear:</strong>&#8211;  Click the Clear button to clear all the fields</li>
+<li><strong>Cancel:</strong>&#8211; Click the Cancel button to cancel operation and switch back to &#8220;Search result Alt. Name&#8221; Tab.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="listentry.html">Sanction List Entry</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="gg.html">Exception(Good Guy)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

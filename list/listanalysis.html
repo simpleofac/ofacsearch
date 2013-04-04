@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sanction List Analysis &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="List Management" href="index.html" />
+    <link rel="next" title="Upload Sanction List" href="listupload.html" />
+    <link rel="prev" title="Sanction List History" href="listhistory.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Sanction List Analysis</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="listhistory.html">Sanction List History</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="listupload.html">Upload Sanction List</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="sanction-list-analysis">
+<span id="list-list-analysis"></span><h1>Sanction List Analysis<a class="headerlink" href="#sanction-list-analysis" title="Permalink to this headline">¶</a></h1>
+<p>List analysis gives users the ability to view the changes on the sanction list between day one and day two.</p>
+<p>Click the <strong>List Analysis</strong> in the left navigation menu under List management, a new <strong>List Analysis</strong> Tab folder will be created
+in the right panel.</p>
+<p>There are 2 sub-Tab folders, <a class="reference internal" href="#list-list-analysis-search"><em>Search Sanction List Analysis</em></a> and <a class="reference internal" href="#list-list-analysis-search-result"><em>Search Result Sanction List Analysis</em></a>.</p>
+<img alt="Sanction List Analysis search screen" src="../_images/list-analysis-search.png" />
+<div class="section" id="search-sanction-list-analysis">
+<span id="list-list-analysis-search"></span><h2>Search Sanction List Analysis<a class="headerlink" href="#search-sanction-list-analysis" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>From Date</td>
+<td>The start date; it must be in mm/dd/yyyy HH:MM:SS or mm/dd/yyyy format. This is required.</td>
+</tr>
+<tr class="row-odd"><td>To Date</td>
+<td>The end date; it must be in mm/dd/yyyy HH:MM:SS or mm/dd/yyyy format.
+Leave this field empty will bring the latest data, the same as current date.</td>
+</tr>
+<tr class="row-even"><td>EntNum</td>
+<td>Link to sanction list entry unique record identifier.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-sanction-list-analysis">
+<span id="list-list-analysis-search-result"></span><h2>Search Result Sanction List Analysis<a class="headerlink" href="#search-result-sanction-list-analysis" title="Permalink to this headline">¶</a></h2>
+<img alt="Sanction List Analysis search result screen" src="../_images/list-analysis-search-result.png" />
+<p>The left side result list shows the list of the sanction list that has been changed (add/delete/update) during from-date to to-date.
+In the right top port, is the Details - Old, shows the select entry at From-Date point of time.
+The right bottom part, Details - New, shows the selected entry at To-Date point of time.</p>
+<p>If at From-Date, the select entry does not exist yet, name, type, program, etc fields will be empty.
+If the select entry is deleted, The <strong>**DELETE*</strong> will be add in front of the name.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="listhistory.html">Sanction List History</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="listupload.html">Upload Sanction List</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

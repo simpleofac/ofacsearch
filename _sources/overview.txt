@@ -1,0 +1,46 @@
+.. _overview:
+
+SimpleOFAC Suite Solution overview
+===================================
+
+Simple OFAC Suite™ is built on the idea that OFAC compliance tools can be more intuitive, efficient, and useful. 
+It uses the latest Web 2.0 (AJAX) and innovative indexing and search technology, providing user friendly interface, 
+high performance, and quality. It is an open and extensible platform and it supports various API and web services interface. 
+It can be easily integrated with your existing system or customized to match to your business processes.
+
+
+SimpleOFAC Suite™ Compliance Software consists of the following major components:
+
+#. :ref:`list-index`.
+
+   Manage sanction list. It supports the list upload. The following lists are support, and it can easily add a new plugin 
+   to support a new list: 
+   BIS-DPL, BIS-UNVENRIFIED, CIA WORLD LEADER, EU, HUD-LDP, NS-PLC, OCC UNAUTHORIZED BANK LIST, OFAC SDN, OFSI ENTITY, 
+   OFSI INDIVIDUAL, STATE-DEBAR, and UK-HM.
+    
+#. :ref:`screening-index`.
+
+   Manage screening engines. Screening engine screens text/message against the sanction list and gives alerts or no alert result.
+   
+#. :ref:`case-index`.
+
+   The alert result can be loaded into case management for review. It has build-in algorithm to detect duplicated text/message.
+   
+#. Custom Reporting and auditing
+
+#. Build-in configurable workflow
+
+#. User/group/role/permission/Organization Unit Administration
+
+#. Analysis tools
+   
+   * Free Text Lookup:  It is a very useful browse-based tool used to screen any text or message using the screening engine service. 
+   * SimpleOFAC Client: It is a Java utility and runs on the user’s desktop. It takes a customer file as input and screens the files
+     against screening engine service, generates statistics, such as number of alerts, hits, their match term, and number of hits 
+     each sanction list entry receives. 
+    
+   Both of them can be used as a test tool to test screening engine service and the sanction lists. Thus help users to do 
+   the turning of the sanction list itself (create Exception (good guy), or exclude AKA)
+   and/or on the parameter settings on screening engine service (setting threshold, scan mode, etc.).
+
+The :ref:`glossary` is common terms used in this document , which is also worth going through.

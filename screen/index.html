@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Screening Management &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="next" title="Screening Instance (Engine)" href="screeninstance.html" />
+    <link rel="prev" title="Sanction List Upload History" href="../list/listuploadhistory.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Screening Management</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="../list/listuploadhistory.html">Sanction List Upload History</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="screeninstance.html">Screening Instance (Engine)</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="screening-management">
+<span id="screening-index"></span><h1>Screening Management<a class="headerlink" href="#screening-management" title="Permalink to this headline">¶</a></h1>
+<p>The Screening Engine is the central piece of SimpleOFAC OFAC Suite. The screening engine is a service that
+screens customer name or payment transaction against the sanction list and gives an alert or no alert result.</p>
+<p>The screening engine utilizes the sanction list to scan the text or messages. The user can create many different screening engines
+using a different set of sanction lists. For example, if Line of Business A needs to scan customer data, it only needs to
+scan the sanction list with origin equal to OFAC. Then the user can create a new screening engine named LOB A, for example,
+with a sanction list whose origin is equal to OFAC. This not only makes scans much more efficient,
+but also makes tests much easier to run.</p>
+<p>The SimpleOFAC screening engine uses innovative indexing and search technology, providing high performance and quality.
+When the sanction list is indexed, we transform and normalize the data; for example, removing blank spaces (including new lines),
+stemming, removing a particular character, and replacing it with another. Those are called pre-processors.
+They are configurable and a new one can easily be add when needed. There are many algorithms used; for example,
+Levenshtein distance algorithm, n-gram models and patterns, etc. Those algorithms also manage how the score (ranking) is calculated.
+There are lots of factors that contribute to the score. Each word has a weight, according to a few factors, such as its length,
+position, frequency, etc.</p>
+<p>When a screening engine is created, the user has option to exclude all the weak AKA. This would reduce many false positive alerts.
+See Alt name section <a class="reference internal" href="../list/alt.html#list-alt-search-result"><em>Search Result Alt. Name</em></a> for details.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="screeninstance.html">Screening Instance (Engine)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instancehistory.html">Screening Instance History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="freetextlookup.html">Free Text Lookup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filescan.html">File Scan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="customerdbscan.html">Customer DBScan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integration.html">Integration with Screening Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="batches.html">Batches</a></li>
+</ul>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="../list/listuploadhistory.html">Sanction List Upload History</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="screeninstance.html">Screening Instance (Engine)</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

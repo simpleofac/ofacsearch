@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>WatchList Alert &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="Case Management" href="index.html" />
+    <link rel="next" title="Workflow" href="../workflow/index.html" />
+    <link rel="prev" title="Case Management" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>WatchList Alert</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Case Management</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../workflow/index.html">Workflow</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="watchlist-alert">
+<span id="case-wla"></span><h1>WatchList Alert<a class="headerlink" href="#watchlist-alert" title="Permalink to this headline">¶</a></h1>
+<p>Users scan the customer data via File Scan or customer dbscan in the screening Management.
+The screening result is loaded into watchlist alert database for review.
+This function is used to search watch list alert and make a decisions on it.</p>
+<p>Click the <strong>WatchList Alert</strong> in the left navigation menu
+under Case management, a new WatchList Alert Tab folder will be created in the right panel.
+There are 3 sub-Tab folders, <a class="reference internal" href="#case-wla-search"><em>Search WatchList Alert</em></a>, <a class="reference internal" href="#case-wla-search-result"><em>Search Result WatchList Alert</em></a> and <a class="reference internal" href="#case-wla-new"><em>Create New WatchList Alert</em></a>.</p>
+<img alt="Watchlist alert search screen" src="../_images/case-wla-search.png" />
+<div class="section" id="search-watchlist-alert">
+<span id="case-wla-search"></span><h2>Search WatchList Alert<a class="headerlink" href="#search-watchlist-alert" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>WLAlert Id</td>
+<td>This is the unique number for the watch list alert entry in the system.</td>
+</tr>
+<tr class="row-odd"><td>Customer Id</td>
+<td>Used only when use customer dbscan.</td>
+</tr>
+<tr class="row-even"><td>CreatedByDate</td>
+<td>Date and Time when this entry is created</td>
+</tr>
+<tr class="row-odd"><td>CreatedByUser</td>
+<td>User who create this entry.</td>
+</tr>
+<tr class="row-even"><td>OrgUnit Code</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-odd"><td>Status Code</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-even"><td>Assigned By</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-odd"><td>Assigned To</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-even"><td>Assigned To</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-odd"><td>Group</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>AND</td>
+<td>Select AND radio box if you want those criteria add together.</td>
+</tr>
+<tr class="row-odd"><td>OR</td>
+<td>Select OR radio box if you want to get the result if either criteria meet</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-watchlist-alert">
+<span id="case-wla-search-result"></span><h2>Search Result WatchList Alert<a class="headerlink" href="#search-result-watchlist-alert" title="Permalink to this headline">¶</a></h2>
+<img alt="WatchList Alert search result screen" src="../_images/case-wla-search-result.png" />
+<p>The top part is the table, shows the list of the watch list alerts that meet the search criteria.
+The bottom part is the details, Hits, Customers, Documents, Emails, and Audit Logs of the selected entry.</p>
+<img alt="WatchList Alert search result screen with Hit Info" src="../_images/case-wla-search-result-hit.png" />
+<p>Each alert has one to many hit, a hit is created when the name or alias of the sanction list match all or part of customer name.
+The Hit detail screen shows all the information from the sanction list.</p>
+<img alt="WatchList Alert search result screen with audit log Info" src="../_images/case-wla-search-result-audit-log.png" />
+<p>Alert Audit Log with action name, action reason, from status, to status, comment, action by, and action date.</p>
+</div>
+<div class="section" id="update-delete-watchlist-alert">
+<span id="case-wla-update"></span><h2>Update/Delete WatchList Alert<a class="headerlink" href="#update-delete-watchlist-alert" title="Permalink to this headline">¶</a></h2>
+<p><strong>Double Click</strong> the selected record in the table to modify this entry.
+A new Tab folder &#8220;Update/Delete WatchList Alert&#8221; will be added, as show below.</p>
+<img alt="WatchList Alert update/delete screen" src="../_images/case-wla-update.png" />
+<div class="section" id="id1">
+<h3>Functional buttons<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Action Dropdown list:</strong> &#8211;  depends on the current alert status and user’s permission.
+It will show a list of action the user is allowed to perform. Select one of the action from the dropdown list.
+Typically, Users can add a comment, add document, remove a document, assign to person/group, close it (Not a match, or true match),
+escalated to Compliance officer, etc. Those actions are configured via workflow;
+Users are able to toiler to meet their own business process. Please see <a class="reference internal" href="../workflow/index.html#workflow-index"><em>Workflow</em></a> section for details.</li>
+<li><strong>Action Reason Dropdown list :</strong>&#8211;  Select one of the action reason from the dropdown list.</li>
+<li><strong>Alert Comments:</strong>&#8211; Free text box to allow user to input the comments of this action, Comments will show in the action logs.</li>
+<li><strong>Submit:</strong>&#8211; Perform this action, the pop down will show, indicating success or failure.
+Depends on the action performed, it may change the action status.
+It will stay in this page to allow user to perform another actions</li>
+<li><strong>Reset:</strong>&#8211;  reset the data to its initial value, discard all the changes.</li>
+<li><strong>Close:</strong>&#8211;  Cancel this change(if any) and close this page and switch back to &#8220;Search result WLA alert&#8221; Tab.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="create-new-watchlist-alert">
+<span id="case-wla-new"></span><h2>Create New WatchList Alert<a class="headerlink" href="#create-new-watchlist-alert" title="Permalink to this headline">¶</a></h2>
+<p>Select the &#8220;Create New WatchList Alert&#8221; Tab to create a new entry.</p>
+<img alt="Watchlist alert create new screen" src="../_images/case-wla-new.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Normally Watchlist alerts are created by <a class="reference internal" href="../screen/filescan.html#screen-file-scan"><em>File Scan</em></a> or <a class="reference internal" href="../screen/customerdbscan.html#screen-customer-dbscan"><em>Customer DBScan</em></a>.</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>WLAlert Id</td>
+<td>This is the unique number for the watch list alert entry in the system.</td>
+</tr>
+<tr class="row-odd"><td>Scanned Data</td>
+<td>The data that is scanned by the screenign engine</td>
+</tr>
+<tr class="row-even"><td>Customer Id</td>
+<td>Used only when use customer dbscan.</td>
+</tr>
+<tr class="row-odd"><td>OrgUnit Code</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-even"><td>Assigned By</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-odd"><td>Assigned To</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-even"><td>Assigned To</td>
+<td>select values from the dropdown list.</td>
+</tr>
+<tr class="row-odd"><td>Group</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>Action Reason</td>
+<td>select from the dropdown list</td>
+</tr>
+<tr class="row-odd"><td>Alert Comments</td>
+<td>Free text area to allow user to add comments.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h3>Functional buttons<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Create:</strong> &#8211;  Click the Create button to create a watch list alert and switch to &#8220;Search result WatchList Alert&#8221; Tab.</li>
+<li><strong>Clear:</strong>&#8211;  Click the Clear button to clear all the fields</li>
+<li><strong>Cancel:</strong>&#8211; Click the Cancel button to cancel operation and switch back to &#8220;Search result watchlist alert&#8221; Tab.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Case Management</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="../workflow/index.html">Workflow</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

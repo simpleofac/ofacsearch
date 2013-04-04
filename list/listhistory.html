@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Sanction List History &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="List Management" href="index.html" />
+    <link rel="next" title="Sanction List Analysis" href="listanalysis.html" />
+    <link rel="prev" title="Exception(Good Guy)" href="gg.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Sanction List History</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="gg.html">Exception(Good Guy)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="listanalysis.html">Sanction List Analysis</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="sanction-list-history">
+<span id="list-list-history"></span><h1>Sanction List History<a class="headerlink" href="#sanction-list-history" title="Permalink to this headline">¶</a></h1>
+<p>Every change (add/delete/modify) to the Sanction List entry, Alt. Name or Exceptions will create a record in the sanction history table.
+This not only services as audit purpose, it also can be used to restored the data to any point of past time.</p>
+<p>This function is used to search sanction list history.
+Click the <strong>Sanction List History</strong> in the left navigation menu under List management, a new <strong>Sanction List History</strong> Tab folder
+will be created in the right panel.</p>
+<p>There are 2 sub-Tab folders, <a class="reference internal" href="#list-list-history-search"><em>Search Sanction List History</em></a> and <a class="reference internal" href="#list-list-history-search-result"><em>Search Result  Sanction List History</em></a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">There is no Create New or Update/Delete function on sanction list history.</p>
+</div>
+<img alt="Sanction List History search screen" src="../_images/list-history-search.png" />
+<div class="section" id="search-sanction-list-history">
+<span id="list-list-history-search"></span><h2>Search Sanction List History<a class="headerlink" href="#search-sanction-list-history" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>HistoryId</td>
+<td>Unique record identifier.</td>
+</tr>
+<tr class="row-odd"><td>entNum</td>
+<td>Link to sanction list unique record identifier.</td>
+</tr>
+<tr class="row-even"><td>GG_ALT_ID</td>
+<td>Link to Alt. Name or Exception record identifier; If the change is on sanction list table, this field will be empty</td>
+</tr>
+<tr class="row-odd"><td>Filed Name</td>
+<td>Name of Field.</td>
+</tr>
+<tr class="row-even"><td>New Value</td>
+<td>The new value of this field</td>
+</tr>
+<tr class="row-odd"><td>ChangeDate</td>
+<td>Date and time that changes occurred.</td>
+</tr>
+<tr class="row-even"><td>Changer User</td>
+<td>who made the change.</td>
+</tr>
+<tr class="row-odd"><td>Table Name</td>
+<td>Sanction, Alt. Name or GoodGuy.</td>
+</tr>
+<tr class="row-even"><td>AND</td>
+<td>Select AND radio box if you want those criteria add together.</td>
+</tr>
+<tr class="row-odd"><td>OR</td>
+<td>Select OR radio box if you want to get the result if either criteria meet</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-sanction-list-history">
+<span id="list-list-history-search-result"></span><h2>Search Result  Sanction List History<a class="headerlink" href="#search-result-sanction-list-history" title="Permalink to this headline">¶</a></h2>
+<img alt="Sanction List History search result screen" src="../_images/list-history-search-result.png" />
+<p>The top part is the table, shows the list of the Sanction List History that meet the search criteria.
+The bottom part is the details of the selected entry. There is no create/update/delete function in Sanction List History.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="gg.html">Exception(Good Guy)</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="listanalysis.html">Sanction List Analysis</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

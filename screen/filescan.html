@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>File Scan &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="Screening Management" href="index.html" />
+    <link rel="next" title="Customer DBScan" href="customerdbscan.html" />
+    <link rel="prev" title="Free Text Lookup" href="freetextlookup.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>File Scan</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="freetextlookup.html">Free Text Lookup</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="customerdbscan.html">Customer DBScan</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="file-scan">
+<span id="screen-file-scan"></span><h1>File Scan<a class="headerlink" href="#file-scan" title="Permalink to this headline">¶</a></h1>
+<p>File Scan allows user to scan large volume of data together.
+The format of the file can be csv or xml file.
+It has build-in algorithm to check the unique of each record, if the record itself does not have a unique Id.
+The scan result will be loaded into Watch List Alert database for review.</p>
+<p>Click the <strong>File Scan</strong> in the left navigation menu under Screening management,
+a new <strong>File Scan</strong> Tab folder will be created in the right panel.
+T</p>
+<img alt="File scan wizard one screen" src="../_images/screen-filescan-w1.png" />
+<p>Click on Next button to go to file upload page.</p>
+<img alt="File scan wizard two screen" src="../_images/screen-filescan-w2.png" />
+<p>Click the Browse.. Button will open a window; then select a file to be uploaded.
+The file will be saved temporarily in the server, to avoid this upload file will override the file previous uploaded,
+user can check the &#8220;append timestamp&#8221; checkbox to append the current timestamp into file name.
+If the same file name exists in the server, it will be automatically renamed by adding _v# in the end of the file,
+where # can be 1, 2, 3, etc).
+For example, if the file name is customer_data_file.csv, it will be rename to customer_data_file_v1.csv.</p>
+<p>Click Submit Button will upload the file into server, depends on the size of the size, It may take a couple minutes to upload.</p>
+<img alt="File scan wizard three screen" src="../_images/screen-filescan-w3.png" />
+<p>Click OK to close this popup window; then click Next Button.</p>
+<img alt="File scan wizard four screen" src="../_images/screen-filescan-w4.png" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>OrgUnit Code</td>
+<td>The Orgunit the watch list alert will be saved to.
+select a value from the orgunit dropdown list. This is a mandatory field.</td>
+</tr>
+<tr class="row-odd"><td>File Fame</td>
+<td>Preset from the previous page. This is the file just uploaded.</td>
+</tr>
+<tr class="row-even"><td>File Format</td>
+<td>The format of this file just uploaded; Select a value from the dropdown list.
+This is a mandatory field.</td>
+</tr>
+<tr class="row-odd"><td>Full File Scan</td>
+<td>If this checkbox is checked, the watch list alerts for this ORGUNIT that are not in this file
+will be deleted from the database.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h2>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Load the File:</strong> &#8211;  click this button will load the file into watch list alert database.
+A popup window will show the total number of records in the file, and the number of added, deleted, updated and unchanged records.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Users need to define a batch scan file format. Each client list (Organization Unit) can have different file formats or/and filter engine service
+parameters, based on its risks. Please see <a class="reference internal" href="../resource/fileformat.html#res-fileformat"><em>File Format</em></a> for details.</p>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="freetextlookup.html">Free Text Lookup</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="customerdbscan.html">Customer DBScan</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

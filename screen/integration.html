@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Integration with Screening Engine &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="Screening Management" href="index.html" />
+    <link rel="next" title="Batches" href="batches.html" />
+    <link rel="prev" title="Customer DBScan" href="customerdbscan.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Integration with Screening Engine</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="customerdbscan.html">Customer DBScan</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="batches.html">Batches</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="integration-with-screening-engine">
+<span id="screening-integration"></span><h1>Integration with Screening Engine<a class="headerlink" href="#integration-with-screening-engine" title="Permalink to this headline">¶</a></h1>
+<p>The Screening Engine is the central piece of SimpleOFAC OFAC Suite. The screening engine is a service that
+screens customer name or payment transaction against the sanction list and gives an alert or no alert result.
+It can be used to scan customers in the batch mode or scan payment transactions in real time.
+It supports direct API call, Http request, IBM Websphere MQ, or Java Message Service interface.</p>
+<p>Take http request as example; the following are the list of name parameters can be used:</p>
+<div class="highlight-python"><pre>1. q -- Text to scan: accept any text
+2. min_score -- Threshold: must be a float (number); otherwise will use default, which is set in a configuration file
+3. rows-- Maximum Alerts Returned: must be a integer, default is 50
+4. spell_check -- Enable Fuzzy, Y or N, default N
+5. scan_mode --Scan mode ; accept 0, 1, or 2 0 = medium mode (default) 1 = loose mode, and 2 = strict mode.
+6. wt -- response format; txt, hitnum, xml or any format you like.
+
+    a) txt -- will return in txt format similar to what you see in the screen
+    b) hitnum - number of hits, if 0 means no hit. &gt;0 means has hits need to be reviewed.
+    c) XML  xml format
+
+ 7. origins --list of origin to return; default is return all. Origins are delimited by comma (,) eg. OFAC, OFSI, EU.
+ 8. gg -- apply the exception list, Y/N, default is Y. see sanction list management --&gt; :ref:`list-gg`
+    for the details of exceptions.</pre>
+</div>
+<p>The default values of those parameters is set in a configuration file.</p>
+<p>See Alt name section <a class="reference internal" href="../list/alt.html#list-alt-search-result"><em>Search Result Alt. Name</em></a> for details.</p>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="customerdbscan.html">Customer DBScan</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="batches.html">Batches</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

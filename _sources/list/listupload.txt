@@ -1,0 +1,83 @@
+.. _list-list-upload:
+
+Upload Sanction List
+============================================
+
+This function allows user to load large volumes of data into List management. 
+
+The following lists are support, and it can easily add a new plugin to support a new list: 
+BIS-DPL, BIS-UNVENRIFIED, CIA WORLD LEADER, EU, HUD-LDP, NS-PLC, OCC UNAUTHORIZED BANK LIST, OFAC SDN, OFSI ENTITY, 
+OFSI INDIVIDUAL, STATE-DEBAR, and UK-HM.
+
+Click the **Upload List** in the left navigation menu under List management, a new **Upload List** Tab folder will be created 
+in the right panel.
+ 
+
+.. image:: _images/list-upload-w1.png
+   :alt: Sanction List upload wizard screen one
+
+Click on Next button to go to file upload page
+   
+.. image:: _images/list-upload-w2.png
+   :alt: Sanction List upload wizard screen two
+
+Click the Browse.. Button will open a window; then select a file to be uploaded. 
+The file will be saved temporarily in the server, to avoid this upload file will override the file previous uploaded, 
+user can check the "append timestamp" checkbox to append the current timestamp into file name.
+
+If the same file name exists in the server, it will be automatically renamed by adding _v# in the end of the file, 
+where # can be 1, 2, 3, etc). 
+For example, if the file name is customer_data_file.csv, it will be rename to customer_data_file_v1.csv. 
+
+
+
+Click Submit Button will upload the file into server, depends on the size of the size, It may take a couple minutes to upload.
+
+.. image:: _images/list-upload-w3.png
+   :alt: Sanction List upload wizard screen three
+
+Click OK to close this popup window; then click Next Button.
+
+.. image:: _images/list-upload-w4.png
+   :alt: Sanction List upload wizard screen Four
+
+
+=============== ========================================================================================================
+Field Name      Description
+=============== ========================================================================================================
+Origin	        select a value from the origin dropdown list. This is a mandatory field. 
+File Fame	    Preset from the previous page. This is the file just uploaded.
+File Format     The format of this file just uploaded; Select a value from the dropdown list. 
+                This is a mandatory field
+Full File Scan  If this checkbox is checked, the sanction list entry for this ORIGIN that are not in this file 
+                will be deleted from the database.              
+=============== ========================================================================================================
+
+Functional buttons
+^^^^^^^^^^^^^^^^^^^
+* **Generate Compare Report:** --  click this button will load the file into a temporary database, which will be used in the next step 
+  to view the comparison report. A popup window will show the total number of records in the file 
+  and the number of added, deleted, updated and no changed records.
+
+
+.. image:: _images/list-upload-w5.png
+   :alt: Sanction List upload wizard screen Five
+
+Click OK to close this popup window; User can search preload history and view the preload history result. 
+
+If user is happy with the comparison report, Click Next to go to the upload form.
+
+.. image:: _images/list-upload-w6.png
+   :alt: Sanction List upload wizard screen Six
+
+  
+Functional buttons
+^^^^^^^^^^^^^^^^^^^
+
+* **Load the File:** --  click this button will load the file into list management sanction list database. 
+  A popup window will show the total number of records in the file, and the number of added, deleted, updated and unchanged records.
+
+.. note::   
+   User should not change the Origin, File Name, File Format or Full File Scan in this page, 
+   otherwise, data loaded into the database will be not the same as we see the comparison report.
+   

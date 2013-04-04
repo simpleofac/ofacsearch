@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Customer DBScan &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="Screening Management" href="index.html" />
+    <link rel="next" title="Integration with Screening Engine" href="integration.html" />
+    <link rel="prev" title="File Scan" href="filescan.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Customer DBScan</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="filescan.html">File Scan</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="integration.html">Integration with Screening Engine</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="customer-dbscan">
+<span id="screen-customer-dbscan"></span><h1>Customer DBScan<a class="headerlink" href="#customer-dbscan" title="Permalink to this headline">¶</a></h1>
+<p>Customer DBScan allows user to scan customer data in the customer table. Users load the customer data on the regular basis; for example, every day to add new customers or update the current one.
+When there is a need to scan those customers, user can configure through web interface to set the criteria what kind of customers
+need to be screened, and those customers will be read and screened and then loaded into watch list alert database for review.
+The advantage of this approach is that it will display both
+Customer Information and Watch list alert information side by side, making it easy for investigator to make decision.</p>
+<p>Click the <strong>Customer DBScan</strong> in the left navigation menu under Screening management,
+a new <strong>Customer DBScan</strong> Tab folder will be created in the right panel.</p>
+<p>There are 3 sub-Tab folders, <a class="reference internal" href="#screen-customer-dbscan-search"><em>Search Customer DBScan</em></a>, <a class="reference internal" href="#screen-customer-dbscan-search-result"><em>Search Result Customer DBScan</em></a> and <a class="reference internal" href="#screen-customer-dbscan-new"><em>Create New Customer DBScan</em></a>.</p>
+<img alt="Customer dbscan search screen" src="../_images/screen-customer-dbscan-search.png" />
+<div class="section" id="search-customer-dbscan">
+<span id="screen-customer-dbscan-search"></span><h2>Search Customer DBScan<a class="headerlink" href="#search-customer-dbscan" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Id</td>
+<td>unique record identifier</td>
+</tr>
+<tr class="row-odd"><td>Name</td>
+<td>Name of this entry</td>
+</tr>
+<tr class="row-even"><td>File Format</td>
+<td>The format of the file; Select a value from the dropdown list.</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>Please see <a class="reference internal" href="../resource/fileformat.html#res-fileformat"><em>File Format</em></a> for details.</td>
+</tr>
+<tr class="row-even"><td>OrgUnit Code</td>
+<td>select a value from the orgunit dropdown list.</td>
+</tr>
+<tr class="row-odd"><td>Description</td>
+<td>Description of this entry</td>
+</tr>
+<tr class="row-even"><td>CreatedByDate</td>
+<td>Date and Time when this entry is created</td>
+</tr>
+<tr class="row-odd"><td>CreatedByUser</td>
+<td>User who create this entry.</td>
+</tr>
+<tr class="row-even"><td>ModifiedByDate</td>
+<td>Last modified date and time.</td>
+</tr>
+<tr class="row-odd"><td>ModifiedByUser</td>
+<td>Last modified user.</td>
+</tr>
+<tr class="row-even"><td>AND</td>
+<td>Select AND radio box if you want those criteria add together.</td>
+</tr>
+<tr class="row-odd"><td>OR</td>
+<td>Select OR radio box if you want to get the result if either criteria meet</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-customer-dbscan">
+<span id="screen-customer-dbscan-search-result"></span><h2>Search Result Customer DBScan<a class="headerlink" href="#search-result-customer-dbscan" title="Permalink to this headline">¶</a></h2>
+<img alt="Customer DBScan search result screen" src="../_images/screen-customer-dbscan-search-result.png" />
+<p>The top part is the table, shows the list of the customer DBScan that meet the search criteria.
+The bottom part is the details of the selected entry.</p>
+</div>
+<div class="section" id="update-delete-customer-dbscan">
+<span id="screen-customer-dbscan-update"></span><h2>Update/Delete Customer DBScan<a class="headerlink" href="#update-delete-customer-dbscan" title="Permalink to this headline">¶</a></h2>
+<p><strong>Double Click</strong> the selected record in the table to modify this entry.
+A new Tab folder &#8220;Update/Delete Customer DBScan&#8221; will be added, as show below.</p>
+<img alt="Customer DBScan update/delete screen" src="../_images/screen-customer-dbscan-update.png" />
+<div class="section" id="id1">
+<h3>Functional buttons<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first"><strong>Update:</strong> &#8211;  make changes on the entry, and save and switch back to &#8220;Search result customer dbscan&#8221; Tab.
+Some of the fields in this form are read only, like Id, Name, created/modified user and date.</p>
+</li>
+<li><p class="first"><strong>Reset:</strong>&#8211;  reset the data to its initial value, discard all the changes.</p>
+</li>
+<li><p class="first"><strong>Cancel:</strong>&#8211; Cancel this change and switch back to &#8220;Search result customer dbscan&#8221; Tab.</p>
+</li>
+<li><p class="first"><strong>Delete:</strong>&#8211; Delete this entry and switch back to &#8220;Search result customer dbscan&#8221; Tab.</p>
+</li>
+<li><p class="first"><strong>Re-Configure</strong> &#8211; Click this button to open a configure wizard to set up the configuration data, as below:</p>
+<img alt="Customer DBScan configuration wizard step one" src="../_images/dbscan-config-w1.png" />
+<p>Click Next Button to go to wizard step 2</p>
+<img alt="Customer DBScan configuration wizard step two" src="../_images/dbscan-config-w2.png" />
+<p>This is a Customer search <em class="xref std std-ref">case-customer-search</em> panel, allowing user to select the customer entries to be included
+in this dbscan. It is pre-populated with the data in the Configuration Data field.</p>
+<p>Set search criteria; then click Find Button will get a list of customer entries that meet the search criteria.
+Those customer entries will be included and scanned by screening instance.</p>
+<img alt="Customer DBScan configuration wizard step three" src="../_images/dbscan-config-w3.png" />
+<p>Click Next button to go to wizard step 3: Save the configuration</p>
+<img alt="Customer DBScan configuration wizard step Four" src="screen/_images/dbscan-config-w4.png" />
+<ul class="simple">
+<li>Click <strong>Finish</strong> will save the configuration into Configuration Data field.</li>
+<li>Click <strong>Cancel</strong> to discard those changes.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Scan Customer</strong> &#8211; Click this button to scan the customers using the customer entries set in the previous step.
+If there are any alerts, it will be saved in the Watch list alert tables under Case management.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="create-new-customer-dbscan">
+<span id="screen-customer-dbscan-new"></span><h2>Create New Customer DBScan<a class="headerlink" href="#create-new-customer-dbscan" title="Permalink to this headline">¶</a></h2>
+<p>Select the &#8220;Create New Customer DBScan&#8221; Tab to create a new entry.</p>
+<img alt="Customer DBScan create new screen" src="../_images/screen-customer-dbscan-new.png" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%" />
+<col width="85%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Id</td>
+<td>unique record identifier</td>
+</tr>
+<tr class="row-odd"><td>Name</td>
+<td>Name of this entry</td>
+</tr>
+<tr class="row-even"><td>File Format</td>
+<td>The format of the file; Select a value from the dropdown list.
+This is a mandatory field. Please see <a class="reference internal" href="../resource/fileformat.html#res-fileformat"><em>File Format</em></a> for details.</td>
+</tr>
+<tr class="row-odd"><td>OrgUnit Code</td>
+<td>The Orgunit the watch list alert will be saved to.
+select a value from the orgunit dropdown list. This is a mandatory field.</td>
+</tr>
+<tr class="row-even"><td>Description</td>
+<td>Description of this entry</td>
+</tr>
+<tr class="row-odd"><td>Data</td>
+<td>Configuration data to define what customer entries should be included.
+User has to set the data value via Configure button.</td>
+</tr>
+<tr class="row-even"><td>CreatedByDate</td>
+<td>Date and Time when this entry is created. It is a read only field.</td>
+</tr>
+<tr class="row-odd"><td>CreatedByUser</td>
+<td>User who create this this entry. It is a read only field.</td>
+</tr>
+<tr class="row-even"><td>ModifiedByDate</td>
+<td>Last modified date and time; It is a read only field.</td>
+</tr>
+<tr class="row-odd"><td>ModifiedByUser</td>
+<td>Last modified user; It is a read only field.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h3>Functional buttons<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Create:</strong> &#8211;  Click the Create button to create a new customer dbscan entry and switch to &#8220;Search result Customer DBScan&#8221; Tab.
+Name, File Format and OrgUnit Code are mandatory fields, if any of them is empty, an error message will show.
+Data field must be set via Configure Button.
+If Data field is empty, all the customer entries will be included.</li>
+<li><strong>Clear:</strong>&#8211;  Click the Clear button to clear all the fields</li>
+<li><strong>Cancel:</strong>&#8211; Click the Cancel button to cancel operation and switch back to &#8220;Search result Screening Instance&#8221; Tab.</li>
+<li><strong>Configure</strong> &#8211;Click the Configure button to open a configure wizard to set up the configuration data.
+(see Re-Configure in Update/Delete Customer DBScan <a class="reference internal" href="#screen-customer-dbscan-update"><em>Update/Delete Customer DBScan</em></a>).</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="filescan.html">File Scan</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="integration.html">Integration with Screening Engine</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Screening Instance (Engine) &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="../index.html" />
+    <link rel="up" title="Screening Management" href="index.html" />
+    <link rel="next" title="Screening Instance History" href="instancehistory.html" />
+    <link rel="prev" title="Screening Management" href="index.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="../index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Screening Instance (Engine)</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Screening Management</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="instancehistory.html">Screening Instance History</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="screening-instance-engine">
+<span id="screen-instance"></span><h1>Screening Instance (Engine)<a class="headerlink" href="#screening-instance-engine" title="Permalink to this headline">¶</a></h1>
+<p>Screening instance, also called Screening engine is a service that scans text/message against the Screening Instance,
+gives alert or no alert result. Screening Instance manage those Screening instances/engines.
+Currently we only support one physical index and one Screening engine at a time; which also means that at any time,
+there are only one Screening engine running,
+using the index that is last build (see Build-Index below). The last build index will override the previous one.</p>
+<p>Click the <strong>Screening Instance</strong> in the left navigation menu under Screening management,
+a new <strong>Screening Instance</strong> Tab folder will be created in the right panel.
+There are 3 sub-Tab folders, <a class="reference internal" href="#screen-instance-search"><em>Search Screening Instance</em></a>, <a class="reference internal" href="#screen-instance-search-result"><em>Search Result Screening Instance</em></a> and <a class="reference internal" href="#screen-instance-new"><em>Create New Screening Instance</em></a>.</p>
+<img alt="Screening Instance search screen" src="../_images/instance-search.png" />
+<div class="section" id="search-screening-instance">
+<span id="screen-instance-search"></span><h2>Search Screening Instance<a class="headerlink" href="#search-screening-instance" title="Permalink to this headline">¶</a></h2>
+<p><strong>Search Criteria</strong></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>InstanceId</td>
+<td>This is the unique number for the Screening Instance entry in the system .</td>
+</tr>
+<tr class="row-odd"><td>Instance Name</td>
+<td>Name of the Screening Instance.</td>
+</tr>
+<tr class="row-even"><td>AND</td>
+<td>Select AND radio box if you want those criteria add together.</td>
+</tr>
+<tr class="row-odd"><td>OR</td>
+<td>Select OR radio box if you want to get the result if either criteria meet</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="functional-buttons">
+<h3>Functional buttons<a class="headerlink" href="#functional-buttons" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Find:</strong> &#8211;  click Find button to search.</li>
+<li><strong>Clear:</strong>&#8211;  click Clear button to clear all the criteria.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="search-result-screening-instance">
+<span id="screen-instance-search-result"></span><h2>Search Result Screening Instance<a class="headerlink" href="#search-result-screening-instance" title="Permalink to this headline">¶</a></h2>
+<img alt="Screening Instance search result screen" src="../_images/instance-search-result.png" />
+<p>The top part is the table, shows the list of the screening instances that meet the search criteria.
+The bottom part is the details of the selected entry.</p>
+</div>
+<div class="section" id="update-delete-screening-instance">
+<span id="screen-instance-update"></span><h2>Update/Delete Screening Instance<a class="headerlink" href="#update-delete-screening-instance" title="Permalink to this headline">¶</a></h2>
+<p><strong>Double Click</strong> the selected record in the table to modify this entry.
+A new Tab folder <strong>Update/Delete Screening Instance</strong> will be added, as show below.</p>
+<img alt="Screening Instance update/delete screen" src="../_images/instance-update.png" />
+<div class="section" id="id1">
+<h3>Functional buttons<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first"><strong>Update:</strong> &#8211;  make changes on the screening instance, and save and switch back to &#8220;Search result Screening Instance&#8221; Tab.
+Some of the fields in this form are read only,  like Instance Id, created/modified user and date.
+The configuration Data field is read only also, it can be modified via the Re-Configure button.</p>
+</li>
+<li><p class="first"><strong>Reset:</strong>&#8211;  reset the data to its initial value, discard all the changes.</p>
+</li>
+<li><p class="first"><strong>Cancel:</strong>&#8211; Cancel this change and switch back to &#8220;Search result Screening Instance&#8221; Tab.</p>
+</li>
+<li><p class="first"><strong>Delete:</strong>&#8211; Delete this entry. Then switch back to &#8220;Search result Screening Instance&#8221; Tab.</p>
+</li>
+<li><p class="first"><strong>Re-Configure</strong> &#8211; Click this button to open a configure wizard to set up the configuration data, as below:</p>
+<img alt="Screening Instance configuration wizard step one" src="../_images/instance-config-w1.png" />
+<p>Click Next Button to go to wizard step 2</p>
+<img alt="Screening Instance configuration wizard step two" src="../_images/instance-config-w2.png" />
+<p>This is a Sanction List search <a class="reference internal" href="../list/listentry.html#list-listentry-search"><em>Search Sanction List</em></a> panel, allowing user to select the sanction list entries to be included
+in this screnning instance. It is pre-populated with the data in the Config Data field.</p>
+<p>Set search criteria; then click Find Button will get a list of sanction list entries that meet the search criteria.
+Those sanction list entries will be indexed and used by this screening instance to scan customer data and/or payment transaction.</p>
+<img alt="Screening Instance configuration wizard step three" src="screen/_images/instance-config-w3.png" />
+<p>Click Next button to go to wizard step 3: Save the configuration</p>
+<img alt="Screening Instance configuration wizard step Four" src="screen/_images/instance-config-w4.png" />
+<ul class="simple">
+<li>Click <strong>Finish</strong> will save the configuration into Configuration Data field.</li>
+<li>Click <strong>Cancel</strong> to discard those changes.</li>
+</ul>
+</li>
+<li><p class="first"><strong>Build Index</strong> &#8211; Click this button to Build search index using the sanction list set in the previous step.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Search index must be re-built, in order to take affect the configuration data changes.
+This is a very important step. Screening Instance uses search index to scan against customer data or transaction messages.</p>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="create-new-screening-instance">
+<span id="screen-instance-new"></span><h2>Create New Screening Instance<a class="headerlink" href="#create-new-screening-instance" title="Permalink to this headline">¶</a></h2>
+<p>Select the &#8220;Create New Screening Instance&#8221; Tab to create a new entry.</p>
+<img alt="Screening Instance create new screen" src="../_images/instance-new.png" />
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field Name</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>InstanceId</td>
+<td>This is the unique number for the screening Instance entry in the system.</td>
+</tr>
+<tr class="row-odd"><td>Instance Name</td>
+<td>Name of the filter screening. This is a mandatory field.</td>
+</tr>
+<tr class="row-even"><td>Description</td>
+<td>Description of this entry.</td>
+</tr>
+<tr class="row-odd"><td>Data</td>
+<td>Configuration data to define what sanction list entries should be included in the search index.
+User has to set the data value via Configure button.</td>
+</tr>
+<tr class="row-even"><td>CreatedByDate</td>
+<td>Date and Time when this Screening Instance entry is created. It is a read only field.</td>
+</tr>
+<tr class="row-odd"><td>CreatedByUser</td>
+<td>User who create this Screening Instance entry. It is a read only field.</td>
+</tr>
+<tr class="row-even"><td>ModifiedByDate</td>
+<td>Last modified date and time; It is a read only field.</td>
+</tr>
+<tr class="row-odd"><td>ModifiedByUser</td>
+<td>Last modified user; It is a read only field.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="id2">
+<h3>Functional buttons<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Create:</strong> &#8211;  Click the Create button to create a new Screening Instance entry and switch to &#8220;Search result Screening Instance&#8221; Tab.
+Instance Name is a mandatory field, if it is empty, an error message will show.
+Data field must be set via Configure Button.
+If Data field is empty, all the sanction list entries will be included when index is built.</li>
+<li><strong>Clear:</strong>&#8211;  Click the Clear button to clear all the fields</li>
+<li><strong>Cancel:</strong>&#8211; Click the Cancel button to cancel operation and switch back to &#8220;Search result Screening Instance&#8221; Tab.</li>
+<li><strong>Configure</strong> &#8211;Click the Configure button to open a configure wizard to set up the configuration data.
+(see Re-Configure in Update/Delete Screening Instance section <a class="reference internal" href="#screen-instance-update"><em>Update/Delete Screening Instance</em></a>).</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="index.html">Screening Management</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="../index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="instancehistory.html">Screening Instance History</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>

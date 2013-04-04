@@ -1,0 +1,117 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation &mdash; SimpleOFAC Suite 2.4.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '2.4.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="SimpleOFAC Suite 2.4.1 documentation" href="index.html" />
+    <link rel="next" title="Login an logout the system" href="loginout.html" />
+    <link rel="prev" title="SimpleOFAC Suite Solution overview" href="overview.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>SimpleOFAC Suite 2.4.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Installation</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="overview.html">SimpleOFAC Suite Solution overview</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="loginout.html">Login an logout the system</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="installation">
+<span id="install"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>SimpleOFAC Suite™ compliance software is a pure-Java server-side web application.
+It runs on any platform (Windows, Unix, Linux ) and supports most Relational Databases (HSQLDB, Oracle, MYSQL, Microsoft SQL).</p>
+<div class="section" id="requirement">
+<h2>Requirement<a class="headerlink" href="#requirement" title="Permalink to this headline">¶</a></h2>
+<p>In order to install SimpleOFAC Suite, you&#8217;ll need a server environment that meets the following requirements:</p>
+<ul class="simple">
+<li>A servlet engine with at least JSP 1.2 and Servlet 2.4 support.</li>
+<li>JDK 1.6.x or later.</li>
+<li>A supported database with a JDBC 2.0 compliant driver.</li>
+</ul>
+<p>We bundle with Apache Tomcat 6.0.35 and HSQL DB 2.2.8 with the distributed zip/gz file.</p>
+</div>
+<div class="section" id="id1">
+<h2>Installation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Please follow the steps below to deploy the application</p>
+<div class="highlight-python"><pre>1. un-pack the zip/gz file in a folder, eg. app
+
+2. open a command console, set the JRE HOME if JRE HOME is not set yet
+ for example, in window:
+     set JRE_HOME=C:\Program Files\Java\jdk1.6.0_20
+ in unix/linux:
+    export JAVA_HOME=/usr/lib/jvm/java-1.6.0-sun
+
+3. go to the unpacked folder (eg.app).
+ then cd to tomcat bin folder, run the startup command
+ cd freetrial\tomcat6\bin
+
+ startup.bat (window)
+ ./startup.sh (unix/linux)
+
+4. you should be ready to go.
+
+ open a broswer (ie,firefox,chrome)
+ http://servername:8080/simpleofac/Main.html
+
+ change the server name with your server name or ip address,
+  or localhost if it is in the same machine
+ eg. http://localhost:8080/simpleofac/Main.html</pre>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="overview.html">SimpleOFAC Suite Solution overview</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="loginout.html">Login an logout the system</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+  <div class=footer>
+    &copy; Copyright 2013, SimpleOFAC Team.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+    Designed by <a href="http://www.simpleofac.com/">SimpleOFAC team</a>.
+  </div>
+  </body>
+</html>
